@@ -1,0 +1,325 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(143, 21, 66);
+    background: linear-gradient(119deg, rgba(143, 21, 66, 1) 9%, rgba(97, 136, 255, 1) 50%, rgba(34, 233, 81, 1) 100%);
+}
+
+header {
+    background-color: blue;
+    text-align: center;
+    color: azure;
+}
+
+.main1 {
+    background-color: aqua;
+    width: 50%;
+    margin: 0 auto;
+}
+
+/* BOX MODEL EN PARRAFO */
+.parrafo {
+    text-align: justify;
+    /* acceso directo
+    Arriba derecha abajo izquierda */
+    padding: 20px;
+
+    /* padding-top: 20px;
+    padding-right: 50px;
+    padding-bottom: 4px;
+    padding-left: 5px; */
+
+    /* acceso directo
+    tamaño tipo de borde color del borde */
+    /* border: 5px solid rgba(11, 211, 58, 0.83); */
+    /* ARRIBA, DERECHA, ABAJO E IZQUIERDA */
+    border-width: 20px 5px 10px 30px;
+    /* border-top-width: 5px;
+    border-right-width: 30px;
+    border-bottom-width: 20px;
+    border-left-width: 0px; */
+
+    /* ARRIBA, DERECHA, ABAJO E IZQUIERDA */
+
+    border-style: dashed groove solid double;
+    /*  border-top-style: groove;
+    border-right-style: solid;
+    border-bottom-style: double;
+    border-left-style: dotted; */
+    /* ARRIBA, DERECHA, ABAJO E IZQUIERDA */
+    border-color: red yellow blue black;
+
+    /*  border-top-color: rgb(7, 218, 7);
+    border-bottom-color: rgb(7, 8, 7);
+    border-right-color: rgb(213, 8, 52);
+    border-left-color: rgb(244, 216, 7); */
+}
+
+h3 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 25px;
+    background-color: gray;
+    text-align: center;
+}
+
+.contenedor {
+    margin-top: 5%;
+    padding: 20px;
+    border: 3px red solid;
+}
+
+.border {
+    border-style: solid;
+    border-color: red;
+    border-width: 2px;
+}
+
+.parrafo2 {
+    text-align: center;
+    padding: 10px;
+    height: auto;
+    overflow: scroll;
+
+}
+
+.centrado {
+    position: relative;
+    text-align: center;
+}
+
+.centrado .img1,
+.img2 {
+    width: 130px;
+}
+
+.main2 {
+    text-align: justify;
+}
+
+.card {
+    color: white;
+    height: auto;
+    width: 300px;
+    padding: 20px;
+    margin: 0 auto;
+    margin-top: 15px;
+    border-radius: 20px;
+    background-color: rgba(54, 73, 73, 0.774);
+    box-shadow: 10px 10px 10px yellow;
+}
+
+.card img {
+    width: 100%;
+    border-radius: inherit;
+    filter: grayscale(100%);
+}
+
+.card iframe {
+    width: 100%;
+    border-radius: inherit;
+}
+
+.card img:hover {
+    filter: grayscale(0);
+}
+
+.card h2 {
+    font-size: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.parrafo3 {
+    text-align: justify;
+    text-transform: uppercase;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.btn {
+    display: block;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    background-color: purple;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+
+.card .btn:hover {
+    background-color: black;
+}
+
+
+.conten {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 70%;
+    margin: 0 auto;
+}
+
+table{
+    width: 80%;
+    top: 50px;
+    margin:  0 auto;
+    background-color: white;
+    border: solid 1px black;    
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin-bottom: 1.2em;
+}
+
+table caption{
+    background-color: plum;
+    padding: 20px;
+    font-size: 25px;
+    color: white;
+}
+
+table thead{
+    background-color: black;
+    color: white;
+}
+
+table tr th, 
+table tr td{
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid black;
+}
+
+table tr:nth-child(even){
+    background-color: rgb(210, 210, 221);
+}
+
+/* table td:nth-child(3){
+    text-align: center;
+} */   
+
+tbody tr:hover{
+    background-color: aqua;
+}
+
+.tab caption{
+    background-color: rgb(0, 0, 0);
+    padding: 20px;
+    font-size: 25px;
+    color: white;
+}
+
+.tab thead{
+    background-color: rgba(0, 216, 254, 0.698);
+}
+
+.tab tr th, 
+.tab tr td{
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid black;
+}
+
+.tab tr:nth-child(even){
+    background-color: rgba(0, 0, 246, 0.613);
+}
+
+.enlace{
+    padding: 20px;
+    text-align: center;
+}
+.enlace a{        
+    text-decoration: none;
+    background-color: purple;
+    font-size: 30px;
+    color: white;    
+}
+
+.enlace a:hover{
+    background-color: black;
+}
+
+
+.contenido{
+    background-color: rgba(128, 128, 128, 0.726);
+    width: 30%;
+
+    margin: 0 auto;    
+}
+
+.lista1{
+    list-style: lower-greek;   
+    padding: 50px;
+}
+
+.lista2{
+    list-style: none;
+    font-size: xx-large;
+}
+
+._contenedorForm{
+    background-color: white;
+    width: 25%;
+    margin: 10px auto;
+    padding: 15px;
+    box-shadow: 10px 10px 10px yellow;
+    
+}
+
+._contenedorForm h2{
+    padding: 5px;
+    text-align: center;
+    font-size: xx-large;
+    color: blue;
+}
+
+.linea{    
+    border: 2px solid gray;
+    border-style: dotted;
+}
+.input label{
+    display: block;
+    font-weight: bold;
+    padding: 5px;
+
+}
+
+.input input{
+    display: block;
+    width: 100%;
+    height: 30px;
+    border: 1px solid gray;
+}
+
+.bton{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 5px;
+    font-size: 18px;
+
+}
+
+.black{
+    background-color: black;
+    color: white;
+}
+
+.azul{
+    background-color: blue;
+    color:white;
+}
+
+.celeste{
+    background-color: rgb(0, 153, 255);
+    color: white;
+}
